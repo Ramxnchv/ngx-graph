@@ -3,6 +3,7 @@
 [![Join the chat at https://gitter.im/swimlane/ngx-graph](https://badges.gitter.im/swimlane/ngx-graph.svg)](https://gitter.im/swimlane/ngx-graph?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A Graph visualization for angular
+
 This fork upgrades library to Angular 19 (there is an alpha version doing this in main library but still not merged) and solves scroll issue when disabling zoom in diagram
 
 ## Documentation & Demos
