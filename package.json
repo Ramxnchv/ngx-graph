@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng run @swimlane/ngx-graph:storybook",
     "build:storybook": "ng run @swimlane/ngx-graph:build-storybook",
-    "build:lib": "ng build @swimlane/ngx-graph --configuration production",
+    "build:lib": "ng build @swimlane/ngx-graph --configuration production && yarn run copy-files",
     "test": "npm run lint",
     "lint": "ng lint",
     "e2e": "ng e2e",
