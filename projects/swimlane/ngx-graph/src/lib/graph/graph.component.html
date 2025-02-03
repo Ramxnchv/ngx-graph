@@ -27,6 +27,7 @@
 
       <svg:rect
         class="panning-rect"
+        [ngStyle]="{ cursor: enableZoom ? 'move' : 'auto' }"
         [attr.width]="dims.width * 100"
         [attr.height]="dims.height * 100"
         [attr.transform]="'translate(' + (-dims.width || 0) * 50 + ',' + (-dims.height || 0) * 50 + ')'"
@@ -92,17 +93,6 @@
         </svg:g>
       </svg:g>
 
-      <svg:g class="links">
-        <svg:g #linkElement *ngFor="let link of graph.edges; trackBy: trackLinkBy" class="link-group" [id]="link.id">
-          <ng-container
-            *ngIf="linkTemplate"
-            [ngTemplateOutlet]="linkTemplate"
-            [ngTemplateOutletContext]="{ $implicit: link }"
-          ></ng-container>
-          <svg:path *ngIf="!linkTemplate" class="edge" [attr.d]="link.line" />
-        </svg:g>
-      </svg:g>
-
       <svg:g class="nodes" #nodeGroup>
         <svg:g
           #nodeElement
@@ -126,6 +116,17 @@
             [attr.cy]="node.dimension.height / 2"
             [attr.fill]="node.data?.color"
           />
+        </svg:g>
+      </svg:g>
+
+      <svg:g class="links">
+        <svg:g #linkElement *ngFor="let link of graph.edges; trackBy: trackLinkBy" class="link-group" [id]="link.id">
+          <ng-container
+            *ngIf="linkTemplate"
+            [ngTemplateOutlet]="linkTemplate"
+            [ngTemplateOutletContext]="{ $implicit: link }"
+          ></ng-container>
+          <svg:path *ngIf="!linkTemplate" class="edge" [attr.d]="link.line" />
         </svg:g>
       </svg:g>
     </svg:g>
