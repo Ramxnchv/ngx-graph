@@ -27,6 +27,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@ampproject/remapping", "npm:2.3.0"],\
           ["@angular-devkit/architect", "npm:0.1802.14"],\
           ["@angular-devkit/build-angular", "virtual:4fbc101786028b29461d742c72264e858a1e36179cfafea4495176911f8361e53fc37b52be2764d03b38aa76548f6e53b6c5bb11269e0b9187725f24a9ddf135#npm:19.1.5"],\
           ["@angular-devkit/core", "virtual:d828b63554ff5f929df875f41a9ea163911c7a958799d364d2f1d21b14eefbb53c035a04f9595ed6a89eaedbba2da838026fe89804e55812dc12c2732e591617#npm:19.1.5"],\
@@ -17305,6 +17306,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["ngx-graph", "workspace:."],\
+          ["@ampproject/remapping", "npm:2.3.0"],\
           ["@angular-devkit/architect", "npm:0.1802.14"],\
           ["@angular-devkit/build-angular", "virtual:4fbc101786028b29461d742c72264e858a1e36179cfafea4495176911f8361e53fc37b52be2764d03b38aa76548f6e53b6c5bb11269e0b9187725f24a9ddf135#npm:19.1.5"],\
           ["@angular-devkit/core", "virtual:d828b63554ff5f929df875f41a9ea163911c7a958799d364d2f1d21b14eefbb53c035a04f9595ed6a89eaedbba2da838026fe89804e55812dc12c2732e591617#npm:19.1.5"],\
