@@ -1,4 +1,8 @@
-# Changelog
+# CHANGELOG
+
+## 10.0.0
+
+- Enhancement: Support Angular 19, `standalone` now required in all `@Component`
 
 ## 9.0.1
 
